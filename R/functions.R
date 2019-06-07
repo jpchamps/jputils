@@ -1,3 +1,6 @@
 sum.na <- function(x) sum(x,na.rm=T)
 printf <- function(...) cat(sprintf(...))
 duplicated_id <- function(...) duplicated(...) | duplicated(...,fromLast = T)
+perc <- function(x) round(x*100,1)
+perc_sign<- function(x) paste0(round(x*100,1),"%")
+money <- function(x) paste0("$", formatC(as.numeric(x), format="f", digits=1, big.mark=","))
